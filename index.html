@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scoreBox">
+        <div>Score: <span id="scoreCount">0</span></div>
+        <div>Max Score: <span id="maxScoreCount">0</span></div>
+    </div>
+    
+    <!-- FIREBASE HOSTING SETUP -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAHflrUpZY54ZweiUzsdLecSbdLKMXqvyQ",
+        authDomain: "hit-the-piggy.firebaseapp.com",
+        databaseURL: "https://hit-the-piggy.firebaseio.com",
+        projectId: "hit-the-piggy",
+        storageBucket: "hit-the-piggy.appspot.com",
+        messagingSenderId: "73838085066"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- FIREBASE HOSTING SETUP -->
+    
+    <script src="jquery.js"></script>
+    <script type="application/javascript" src="script.js"></script>
+</body>
+</html>
